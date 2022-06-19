@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import {  useParams } from "react-router-dom";
+
+
 let TaskDetails = ()=>{
     let {id}=useParams();
     let [task, setTask] = useState({})
@@ -12,7 +14,7 @@ let TaskDetails = ()=>{
         .catch((err)=>{setError(err)})
     },[])
 
-console.log(task);
+
 
 let render_task = ()=>{
     if(task.id){

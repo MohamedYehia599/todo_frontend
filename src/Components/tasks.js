@@ -52,8 +52,8 @@ return(
 
 
 </table>
-{/* <a className="btn btn-success">Add Task</a> */}
-<NavLink className={'btn btn-success'} to='/home'>add</NavLink>
+
+<NavLink className={'btn btn-success'} to='create'>add Task</NavLink>
 </div>
 )
 

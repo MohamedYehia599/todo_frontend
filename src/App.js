@@ -4,7 +4,9 @@ import Home from './Components/home';
 import Tasks from './Components/tasks';
 import TaskDetails from './Components/taskDetails';
 import NotFound from './Components/notFound';
-
+import TaskCreate from './Components/taskCreate';
+import TaskUpdate from './Components/taskUpdate';
+import TaskDelete from './Components/taskDelete';
 
 function App() {
   return (    
@@ -15,8 +17,10 @@ function App() {
      <Route path='/tasks'element={<Tasks/>}/>
      <Route path=''element={<Home/>}/>
      <Route path='/home'element={<Home/>}/>
-     
-     
+     <Route path='/home'element={<Home/>}/>
+     <Route path='/tasks/create'element={<TaskCreate/>}/>
+     <Route path='/tasks/:id/update'element={<TaskUpdate/>}/>
+     <Route path='/tasks/:id/delete'element={<TaskDelete/>}/>
      <Route path='*'element={<NotFound/>}/>
 
      </Routes>
